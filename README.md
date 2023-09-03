@@ -29,8 +29,8 @@ Follow the steps below to set up and run the application locally.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/simple-social-media-app.git
-   cd simple-social-media-app
+   git clone https://github.com/GalinaPylyptiy/TalkerApplication.git
+   cd TalkerApplication
    
 2. Create a PostgreSQL database and update the database configuration in src/main/resources/application.properties.
 3. Build the application using Maven: mvn clean install
