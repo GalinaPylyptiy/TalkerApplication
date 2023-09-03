@@ -35,22 +35,23 @@ Follow the steps below to set up and run the application locally.
 2. Create a PostgreSQL database and update the database configuration in src/main/resources/application.properties.
 3. Build the application using Maven: mvn clean install
 
-###Running the Application
+### Running the Application
 
 Run the application using Maven: mvn spring-boot:run
 
 The application will start, and you can access the endpoints at http://localhost:8080.
 
-###API Endpoints
+### API Endpoints
 
-Posts
+Posts:
 
 POST /post - Create a new post.
 GET /post/{id} - Get a post by ID.
 PUT /post/{id} - Update a post.
 DELETE /post/{id} - Delete a post.
 POST /post/{postId}/like/{userId} - Like a post.
-Users
+
+Users:
 
 POST /users - Create a new user.
 GET /users/{id} - Get a user by ID.
@@ -62,7 +63,7 @@ Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-###Feedback on using ChatGPT to complete the task:
+### Feedback on using ChatGPT to complete the task:
 -It appeared to be not so easy to complete this task using chatGPT, I had a lot of difficulties with configuration and code quality,
 I had to rephrase my questions and requests, because the answer was not always accurate and not responded to my query.
 -It took me almost 8 hours to complete this task.
