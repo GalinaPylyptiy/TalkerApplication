@@ -3,6 +3,7 @@ package com.epam.talker.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -27,7 +28,7 @@ public class Post implements Serializable {
     private String title;
     @Column(name = "body")
     private String body;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
     private User author;
     @ManyToMany()
@@ -74,6 +75,7 @@ public class Post implements Serializable {
         this.author = author;
     }
 
+    @JsonIgnore
     public Set<User> getLikedBy() {
         return likedBy;
     }
